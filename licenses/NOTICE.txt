@@ -1,0 +1,53 @@
+Third-party software in this package
+====================================
+
+Arkistai.exe is (c) 2026 Nightkiln. All rights reserved.
+
+Arkistai.exe is the only file built from Arkistai's own code. Every other DLL in this
+folder belongs to the projects below and is shipped unmodified under its
+own licence, whose text is in this folder.
+
+Qt 6.8.1 - The Qt Company Ltd. and other contributors
+  Files: Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll, Qt6Network.dll,
+         Qt6Sql.dll, Qt6Svg.dll and the plugin folders (platforms,
+         sqldrivers, iconengines, imageformats, styles, tls, generic,
+         networkinformation)
+  Licence: GNU Lesser General Public License v3 (LGPL-3.0.txt), which
+           builds on the GNU General Public License v3 (GPL-3.0.txt)
+  Arkistai uses these libraries dynamically linked and unmodified. You may
+  replace them with your own build of the same Qt version, and modify
+  them and reverse engineer Arkistai to debug such modifications, as the
+  LGPL allows. Source code: https://download.qt.io/official_releases/qt/6.8/6.8.1/single/
+
+PostgreSQL client library (libpq) - PostgreSQL Global Development Group
+  Files: libpq.dll
+  Licence: PostgreSQL Licence (PostgreSQL.txt)
+  Source code: https://www.postgresql.org/ftp/source/
+
+OpenSSL 3 - The OpenSSL Project Authors
+  Files: libssl-3-x64.dll, libcrypto-3-x64.dll
+  Licence: Apache License 2.0 (Apache-2.0.txt)
+  Source code: https://www.openssl.org/source/
+
+GNU gettext runtime (libintl) and GNU libiconv - Free Software Foundation
+  Files: libintl-9.dll, libiconv-2.dll
+  Licence: GNU Lesser General Public License v2.1 or later (LGPL-2.1.txt)
+  Source code: https://ftp.gnu.org/gnu/gettext/ and
+               https://ftp.gnu.org/gnu/libiconv/
+
+mingw-w64 winpthreads - the mingw-w64 project
+  Files: libwinpthread-1.dll
+  Licence: MIT licence, with a BSD-style notice for parts from
+           Lockless Inc. (winpthreads.txt)
+  Source code: https://www.mingw-w64.org/
+
+Orbitron - The Orbitron Project Authors
+  Files: none of its own; the font is built into Arkistai.exe, unmodified,
+         for the product's name
+  Licence: SIL Open Font License 1.1 (OFL-1.1.txt); "Orbitron" is a
+           Reserved Font Name
+  Source code: https://github.com/theleagueof/orbitron
+
+Microsoft Visual C++ runtime - Microsoft Corporation
+  Files: msvcp140*.dll, vcruntime140*.dll, concrt140.dll, vccorlib140.dll
+  Redistributed as the Visual Studio licence permits.
